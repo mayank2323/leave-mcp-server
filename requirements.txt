@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+pyjwt[crypto]
+cryptography
+python-multipart
+fastmcp
+mcp
