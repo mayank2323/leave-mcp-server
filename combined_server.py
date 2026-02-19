@@ -514,7 +514,7 @@ async def submit_leave(
     return json.dumps({"message": "Leave request submitted successfully", "request": rec}, indent=2)
 
 
-mcp_starlette_app = mcp.http_app(path="/", transport="streamable-http", json_response=True, stateless_http=True)  # noqa: F811
+mcp_starlette_app = mcp.http_app(path="/", transport="streamable-http", json_response=True)  # noqa: F811
 app.mount("/mcp", mcp_starlette_app)
 
 
